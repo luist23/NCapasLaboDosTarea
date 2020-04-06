@@ -16,7 +16,7 @@ public class MainController {
 	    }
 
     @PostMapping("/validacion")
-    public String procesarForm(Usuario usuario) {
+    public String procesarForm(Usuario usuario) {//CREDENCIALES CORRECTAS user:admin password:admin
     	if (usuario.getNombre().equals("admin") && usuario.getOcupacion().equals("admin")) {
     		return "mostrarMensajeV";
     	}
